@@ -7,7 +7,7 @@
 }
 else if (ErrorMessage != null)
 {
-    <h3 class="text-danger">@ErrorMessage</h3>
+    <DisplayError ErrorMessage="@ErrorMessage"></DisplayError>
 }
 else
 {
@@ -25,6 +25,9 @@ else
                     @Product.Price.ToString("C")&nbsp;(@Product.Qty items in stock)
                 </b>
             </p>
+            <div>
+                <button class="btn btn-success"><b>Add to cart</b></button>
+            </div>
         </div>
     </div>
 }
